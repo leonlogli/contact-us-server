@@ -1,0 +1,1 @@
+Contact form manager for sending messages that will be stored in a Mongo database.
