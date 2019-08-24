@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Contact Message Handler - Server Side",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RestFull",
+    "Contact",
+    "Message"
+  ],
+  "author": "Léon Logli",
+  "license": "ISC"
+}
