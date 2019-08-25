@@ -1,1 +1,1 @@
-Contact form manager for sending messages that will be stored in a Mongo database.
+ContactUS app based on Express js and  Mongo database to handle messages from client side
