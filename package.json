@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "contact-us-server",
   "version": "1.0.0",
   "description": "Contact Message Handler - Server Side",
   "main": "index.js",
@@ -7,11 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec babel-node ./src/index.js",
     "build": "babel src --out-dir ./dist --source-maps",
-    "serve": "node ./dist/index.js"
+    "start": "node ./dist/index.js"
   },
   "keywords": [
     "RestFull",
-    "Contact",
+    "ContactUS",
     "Message"
   ],
   "author": "Léon Logli",
