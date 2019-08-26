@@ -10,21 +10,17 @@ var _mongoose = _interopRequireDefault(require("mongoose"));
 
 var _config = _interopRequireDefault(require("./config"));
 
+var _cors = _interopRequireDefault(require("cors"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var app = (0, _express["default"])();
+app.use((0, _cors["default"])());
 app.use(_bodyParser["default"].urlencoded({
   extended: true
 }));
 app.use(_bodyParser["default"].json());
-app.use("/", _routes["default"]); //Enable CORS for all HTTP methods
-
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, OPTIONS");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-}); // Connect to Mongoose and set connection variable
+app.use("/", _routes["default"]); // Connect to Mongoose and set connection variable
 
 _mongoose["default"].connect(_config["default"].dbUrl, {
   useNewUrlParser: true
