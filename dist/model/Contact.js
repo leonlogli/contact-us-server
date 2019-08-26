@@ -18,7 +18,6 @@ var contactSchema = _mongoose["default"].Schema({
   email: {
     type: String,
     trim: true,
-    unique: "The specified email already exists",
     required: "Email address is required",
     match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, "Please fill a valid email address"]
   },
