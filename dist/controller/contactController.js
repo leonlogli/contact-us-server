@@ -27,7 +27,7 @@ var saveContact = function saveContact(req, res) {
   }
 
   var contact = new _Contact["default"]({
-    firstName: req.body.name,
+    firstName: req.body.firstName,
     lastName: req.body.lastName,
     office: req.body.office,
     email: req.body.email,

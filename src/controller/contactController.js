@@ -17,7 +17,7 @@ const saveContact = (req, res) => {
   }
 
   const contact = new Contact({
-    firstName: req.body.name,
+    firstName: req.body.firstName,
     lastName: req.body.lastName,
     office: req.body.office,
     email: req.body.email,
